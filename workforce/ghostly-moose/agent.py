@@ -11,6 +11,7 @@ def get_datetime() -> str:
 agent = Agent(
     name="agent",
     model="openai/gpt-5.2",
+    system_prompt="You are a helpful assistant that can answer questions and help with tasks.",
     tools=[get_datetime],
 )
 
